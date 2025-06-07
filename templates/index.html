@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Simulador de Conflictos - Suiza</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Mapa de Suiza</h1>
+    <div id="map">
+        <div class="region" id="Norte">Norte</div>
+        <div class="region" id="Sur">Sur</div>
+        <div class="region" id="Este">Este</div>
+        <div class="region" id="Oeste">Oeste</div>
+        <div class="region" id="Centro">Centro</div>
+    </div>
+    <div id="actions">
+        <select id="accion">
+            <option value="mover">Mover</option>
+            <option value="atacar">Atacar</option>
+        </select>
+        <input id="origen" placeholder="Origen"/>
+        <input id="destino" placeholder="Destino"/>
+        <select id="tipo">
+            <option value="infantry">Infantería</option>
+            <option value="mountain">Tropas de montaña</option>
+            <option value="mechanized">Mecanizadas</option>
+        </select>
+        <button onclick="enviarAccion()">Ejecutar</button>
+    </div>
+    <h2 id="score">Puntuación: 0</h2>
+    <script src="/static/script.js"></script>
+</body>
+</html>
